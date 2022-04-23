@@ -33,6 +33,9 @@ def auth(login, password, telegram_id):
     else:
         return False
 
+def complete(task_id) -> bool:
+
+    return True
 
 
 def getEventsForUser(id):
@@ -52,7 +55,7 @@ def getEventsForUser(id):
                     "SELECT * FROM `event_types` WHERE `id` = '" + str(an[2]) + "'", fetch=True)
 
                 events.append([a[0][1], an[3], an[4]])
-
+        print(events)
         return events
     else:
         return False
