@@ -46,6 +46,11 @@ def login(update: Update, context: CallbackContext):
     else:
         update.message.reply_text("Произошла ошибка :(")
 
+def btn(name, id):
+    name = "Выполнить " + str(name)
+    id = "/complete "+ str(id)
+    return InlineKeyboardButton(name, callback_data=id)
+
 def routine(update: Update, context: CallbackContext):
 #    user_id = json.dumps(update)
     telegram_id=str(update.message.from_user.id)
@@ -54,9 +59,8 @@ def routine(update: Update, context: CallbackContext):
         update.message.reply_text("Вы не авторизованы!")
         return
     response_text = utility_custom.routines_to_routine_table(response)
-#    print(user_id)
-     btn = lambda task_name, task_id: InlineKeyboardButton("Выполнить " + task_name, callback_data="/complete  " + str(task_id))
-    keyboard = [btn(task[i][0], 1) for task in response]
+#    print(user_id) 
+    keyboard = [[btn(task[0], 1)] for task in response]
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text(response_text, reply_markup=reply_markup)
 
