@@ -9,8 +9,8 @@
 
 <h4 align="center">Телеграм бот для платформы SeedCore, разработанной командой Aloe Vera в рамках хакатона TulaHack2022. Бот доступен по <a href="http://t.me/seedcare_bot">ссылке </a>. Проект доступен по <a href="https://aloevera.thevladoss.site">ссылке </a></h4>
 
+![screenshot](https://user-images.githubusercontent.com/53406289/164970551-c41c8385-5c84-4bbe-a831-37b40724f04d.png)
 
-![screenshot](demonstration.mp4)
 
 <p align="center">
   <a href="https://aloevera.thevladoss.site">Сайт</a> •
