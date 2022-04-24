@@ -26,6 +26,7 @@
 ## Команда 
 
 SeedCare разработан командой Aloe Vera в рамках хакатона TulaHack2022
+
 Ссылка на основной репозиторий: https://github.com/Aloe-Vera-Development/aloevera.thevladoss.site
 
 Aloe Vera - это мы:
