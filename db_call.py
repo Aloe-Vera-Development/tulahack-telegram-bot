@@ -4,10 +4,10 @@ from mysql.connector import connect, Error
 def _dbQuery(sql, fetch=False):
     try:
         with connect(
-                host='mysql.osinvladislav.myjino.ru',
-                user='046502789_aloe',
-                password='aloevera',
-                database='osinvladislav_aloevera'
+                host='hui',
+                user='hooi',
+                password='hooi',
+                database='osinvlaggjhgjdislav_aloevera'
         ) as db:
             cursor = db.cursor()
             cursor.execute(sql)
