@@ -33,10 +33,10 @@ updater = Updater(token,
   
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
-        "Enter the text you want to show to the user whenever they start the bot")
+        "Пожалуйста, авторизуйтесь в системе с помощью команды  `/login name pass`")
 
 def help(update: Update, context: CallbackContext):
-    update.message.reply_text("Your Message")
+    update.message.reply_text("Привет! Я твой помощник в уходе за растениями - @seedcare_bot")
 
 def login(update: Update, context: CallbackContext):
     login, password = utility_custom.parse_args(update.message.text, 2)
